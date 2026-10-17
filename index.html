@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ghost Pizza & Döner | Cizre'nin Hayalet Lezzeti</title>
+<meta name="description" content="Cizre Dicle Mahallesi'nde gizli tarifli pizza ve şişte pişen döner. Menüyü incele, sepetini hazırla, WhatsApp'tan sipariş ver.">
+<meta name="theme-color" content="#0a1226">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ghost Pizza & Döner | Cizre">
+<meta property="og:description" content="Gizli tarifli pizza ve şişte pişen döner. Menü, konum ve online sipariş.">
+<meta property="og:locale" content="tr_TR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 134'%3E%3Crect width='120' height='134' rx='26' fill='%230a1226'/%3E%3Cpath d='M60 18C38 18 24 36 24 58v52c0 5 5 7 9 3l7-7 7 7c3 3 7 3 10 0l3-5 3 5c3 3 7 3 10 0l7-7 7 7c4 4 9 2 9-3V58C96 36 82 18 60 18z' fill='%23f6f1e8'/%3E%3Ccircle cx='47' cy='62' r='6' fill='%230a1226'/%3E%3Ccircle cx='73' cy='62' r='6' fill='%230a1226'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Ghost Pizza & Döner","servesCuisine":["Pizza","Döner"],"address":{"@type":"PostalAddress","streetAddress":"Dicle Mahallesi","addressLocality":"Cizre","addressRegion":"Şırnak","addressCountry":"TR"},"sameAs":["https://instagram.com/ghostpizzadoner","https://www.tiktok.com/@ghostpizzadoner"]}
+</script>
+<style>
+:root{--night:#0a1226;--night2:#0f1a35;--night3:#16244a;--line:rgba(243,236,224,.14);--bone:#f3ece0;--ember:#ff5a1f;--flame:#ffb02e;--smoke:#9aa9c7;--nav:68px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--night);color:var(--bone);font:400 17px/1.6 Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button,input,textarea{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+svg{display:block;max-width:100%}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--flame);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1240px,calc(100% - 32px));margin:0 auto}
+@media(min-width:700px){.wrap{width:min(1240px,calc(100% - 72px))}}
+.disp{font-family:Archivo,Impact,sans-serif;font-weight:900;font-variation-settings:"wdth" 72;line-height:.92;letter-spacing:-.01em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 28px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.btn:active{transform:scale(.97)}
+.btn.fill{background:var(--ember);color:#fff}
+.btn.fill:hover{background:var(--flame);color:var(--night)}
+.btn.line{border:1.5px solid var(--line)}
+.btn.line:hover{border-color:var(--bone)}
+.btn.ink{background:var(--night);color:var(--bone)}
+.btn.ink:hover{background:#000}
+.btn.edge{border:1.5px solid rgba(10,18,38,.4);color:var(--night)}
+.btn.edge:hover{border-color:var(--night)}
+
+.top{position:fixed;inset:0 0 auto 0;height:var(--nav);z-index:90;display:flex;align-items:center;pointer-events:none;border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
+.top.solid{background:rgba(10,18,38,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+body.menu-open .top.solid{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-color:transparent}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;pointer-events:none}
+.top .wrap>*{pointer-events:auto}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:34px;height:38px}
+.brand b{font-size:28px;display:block}
+.brand small{display:block;font-size:12px;color:var(--smoke);margin-top:3px}
+.burger{position:relative;width:56px;height:56px;border-radius:50%;background:rgba(15,26,53,.72);border:1px solid var(--line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:background .25s,border-color .25s}
+.burger:hover{border-color:var(--bone)}
+.burger span{position:absolute;left:17px;width:22px;height:2px;border-radius:2px;background:var(--bone);transition:transform .35s cubic-bezier(.6,0,.2,1),opacity .2s,top .35s cubic-bezier(.6,0,.2,1)}
+.burger span:nth-child(1){top:20px}
+.burger span:nth-child(2){top:27px}
+.burger span:nth-child(3){top:34px}
+.burger[aria-expanded=true]{background:var(--ember);border-color:var(--ember)}
+.burger[aria-expanded=true] span:nth-child(1){top:27px;transform:rotate(45deg)}
+.burger[aria-expanded=true] span:nth-child(2){opacity:0}
+.burger[aria-expanded=true] span:nth-child(3){top:27px;transform:rotate(-45deg)}
+
+.sheet{position:fixed;inset:0;z-index:80;display:flex;flex-direction:column;justify-content:center;padding:calc(var(--nav) + 20px) 0 28px;background:var(--night2);clip-path:circle(0 at calc(100% - 44px) 38px);visibility:hidden;transition:clip-path .7s cubic-bezier(.7,0,.15,1),visibility 0s .7s;overflow:auto}
+.sheet.on{clip-path:circle(160% at calc(100% - 44px) 38px);visibility:visible;transition:clip-path .7s cubic-bezier(.7,0,.15,1),visibility 0s}
+.sheet::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 500px at 85% 20%,rgba(255,90,31,.2),transparent 70%);pointer-events:none}
+.sheet .wrap{position:relative;display:grid;gap:40px}
+@media(min-width:900px){.sheet .wrap{grid-template-columns:1.6fr 1fr;align-items:end}}
+.slinks{display:grid}
+.slinks a{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid var(--line);opacity:0;transform:translateY(34px);transition:opacity .5s,transform .6s cubic-bezier(.2,.8,.2,1),color .2s}
+.sheet.on .slinks a{opacity:1;transform:none}
+.sheet.on .slinks a:nth-child(1){transition-delay:.3s,.3s,0s}
+.sheet.on .slinks a:nth-child(2){transition-delay:.38s,.38s,0s}
+.sheet.on .slinks a:nth-child(3){transition-delay:.46s,.46s,0s}
+.sheet.on .slinks a:nth-child(4){transition-delay:.54s,.54s,0s}
+.slinks b{font-size:clamp(46px,9.5vw,112px)}
+.slinks small{color:var(--smoke);font-size:15px;text-align:right}
+@media(max-width:520px){.slinks small{display:none}.slinks a{padding:14px 0}}
+.slinks a:hover b,.slinks a[aria-current=page] b{color:var(--ember)}
+.sside{display:grid;gap:22px;opacity:0;transition:opacity .5s .7s}
+.sheet.on .sside{opacity:1}
+.sside h4{font-size:15px;color:var(--smoke);font-weight:600;margin-bottom:6px}
+.sside a{display:block;font-weight:600;padding:2px 0}
+.sside a:hover{color:var(--flame)}
+
+.curtain{position:fixed;inset:0;z-index:95;background:var(--ember);transform:translateY(100%);pointer-events:none;display:grid;place-items:center}
+.curtain svg{width:84px;height:94px;opacity:0;transition:opacity .2s}
+.curtain.in{transform:none;transition:transform .45s cubic-bezier(.7,0,.2,1)}
+.curtain.in svg{opacity:1;transition-delay:.25s}
+.curtain.out{transform:translateY(-100%);transition:transform .45s cubic-bezier(.7,0,.2,1)}
+.curtain.reset{transition:none;transform:translateY(100%)}
+
+.view{display:none;min-height:100svh}
+.view.on{display:block}
+.view:focus{outline:0}
+.page{padding:calc(var(--nav) + 56px) 0 160px}
+.ph h1{font-size:clamp(68px,15vw,210px)}
+.ph p{max-width:30em;margin-top:22px;font-size:clamp(18px,2vw,22px);color:#c9d2e6}
+
+.home.on{display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;background:var(--night)}
+.stage{position:absolute;inset:0;pointer-events:none;--rad:min(52vw,420px)}
+.lay{position:absolute;inset:0}
+.lay.dim{opacity:.2}
+.lay.lit{-webkit-mask-image:radial-gradient(circle var(--rad) at var(--mx,70%) var(--my,45%),#000 0,rgba(0,0,0,.9) 34%,transparent 100%);mask-image:radial-gradient(circle var(--rad) at var(--mx,70%) var(--my,45%),#000 0,rgba(0,0,0,.9) 34%,transparent 100%)}
+.pz{position:absolute;right:-26%;top:46%;width:min(104vw,860px);aspect-ratio:1;margin-top:calc(min(104vw,860px)/-2);animation:spin 160s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:859px){.pz{right:-58%;top:30%;margin-top:calc(min(150vw,760px)/-2);width:min(150vw,760px)}}
+.glow{position:absolute;inset:0;background:radial-gradient(circle var(--rad) at var(--mx,70%) var(--my,45%),rgba(255,122,40,.3),transparent 70%)}
+.hcopy{position:relative;z-index:2;padding:calc(var(--nav) + 40px) 0 34px}
+.status{display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border:1px solid var(--line);border-radius:999px;font-size:14px;font-weight:600;background:rgba(10,18,38,.62);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.status i{width:9px;height:9px;border-radius:50%;background:#34d27b;box-shadow:0 0 0 4px rgba(52,210,123,.2)}
+.status.closed i{background:#ff6161;box-shadow:0 0 0 4px rgba(255,97,97,.2)}
+.status.table{border-color:var(--ember);color:var(--flame);margin-left:8px}
+.status.table i{background:var(--ember);box-shadow:0 0 0 4px rgba(255,90,31,.25)}
+.hero-title{margin-top:26px;font-size:clamp(96px,25vw,380px);line-height:.8;letter-spacing:-.015em;color:transparent;-webkit-background-clip:text;background-clip:text;background-image:radial-gradient(circle 300px at var(--hx,70%) var(--hy,45%),var(--flame) 0,var(--bone) 38%,rgba(243,236,224,.2) 100%);padding-bottom:.04em}
+.sub{margin-top:14px;font-family:Archivo,sans-serif;font-weight:800;font-variation-settings:"wdth" 80;text-transform:uppercase;letter-spacing:.32em;font-size:clamp(14px,2vw,20px);color:var(--flame)}
+.lead{max-width:30em;margin-top:22px;font-size:clamp(18px,2vw,21px);color:#c9d2e6}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hint{margin-top:22px;font-size:14px;color:var(--smoke);transition:opacity .5s}
+.hint.gone{opacity:0}
+.doors{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);background:rgba(10,18,38,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding-bottom:env(safe-area-inset-bottom)}
+.doors a{position:relative;display:block;padding:20px 14px 22px;border-left:1px solid var(--line);overflow:hidden;transition:color .3s}
+.doors a:first-child{border-left:0}
+.doors a::before{content:"";position:absolute;inset:0;background:var(--ember);transform:translateY(101%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.doors a:hover::before,.doors a:focus-visible::before{transform:none}
+.doors a>*{position:relative}
+.doors b{display:block;font-size:clamp(15px,4.6vw,40px);white-space:nowrap}
+@media(max-width:699px){.doors a{padding:20px 10px 24px}}
+.doors span{display:none;margin-top:6px;color:var(--smoke);font-size:15px;transition:color .3s}
+.doors a:hover span{color:#fff}
+@media(min-width:700px){.doors a{padding:26px 36px 30px}.doors span{display:block}}
+
+.mtools{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin:40px 0 24px}
+.search{height:54px;width:min(100%,380px);padding:0 24px;border-radius:999px;background:var(--night2);border:1.5px solid var(--line);transition:border-color .2s}
+.search::placeholder{color:var(--smoke)}
+.search:focus{outline:0;border-color:var(--flame)}
+.cats{position:sticky;top:var(--nav);z-index:30;display:flex;gap:8px;overflow-x:auto;padding:12px 0;scrollbar-width:none;background:var(--night)}
+.cats::-webkit-scrollbar{display:none}
+.cat-btn{flex:none;display:flex;align-items:center;gap:10px;padding:11px 20px;border-radius:999px;border:1px solid var(--line);background:var(--night);font-weight:600;white-space:nowrap;transition:background .2s,border-color .2s}
+.cat-btn em{font-style:normal;font-size:13px;color:var(--smoke)}
+.cat-btn:hover{border-color:var(--bone)}
+.cat-btn.on{background:var(--ember);border-color:var(--ember)}
+.cat-btn.on em{color:#ffe3d6}
+.group{padding-top:34px}
+.group h2{font-size:clamp(48px,7vw,92px)}
+.group>p{color:var(--smoke);margin:10px 0 14px}
+.row{display:grid;gap:18px;padding:24px 0;border-top:1px dashed var(--line)}
+@media(min-width:700px){.row{grid-template-columns:1fr auto;align-items:center;gap:32px}}
+.rt h3{font-family:Archivo,sans-serif;font-weight:800;font-variation-settings:"wdth" 88;font-size:clamp(22px,2.4vw,30px);line-height:1.15}
+.rt p{color:var(--smoke);margin-top:4px;max-width:34em}
+.tag{display:inline-block;margin-left:10px;padding:2px 10px;border-radius:999px;border:1px solid var(--ember);color:var(--flame);font:700 12px/1.6 Figtree,sans-serif;vertical-align:middle}
+.rp{display:flex;flex-wrap:wrap;gap:10px}
+@media(min-width:700px){.rp{justify-content:flex-end}}
+.pr{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:84px;padding:10px 18px;border:1.5px solid var(--line);border-radius:14px;transition:background .2s,border-color .2s,transform .2s}
+.pr:hover{background:var(--ember);border-color:var(--ember)}
+.pr:active{transform:scale(.95)}
+.pr small{font-size:12px;color:var(--smoke);transition:color .2s}
+.pr:hover small{color:#fff}
+.pr b{font-family:Archivo,sans-serif;font-weight:800;font-variation-settings:"wdth" 90;font-size:20px;line-height:1.1}
+.pr.single{flex-direction:row;gap:14px;padding:10px 12px 10px 20px;border-radius:999px}
+.pr .pl{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--bone);color:var(--night);font-weight:700;font-size:18px;line-height:1}
+.pr[data-q]::after{content:attr(data-q);position:absolute;top:-10px;right:-8px;min-width:24px;height:24px;padding:0 6px;border-radius:12px;background:var(--flame);color:var(--night);font:700 13px/24px Figtree,sans-serif;text-align:center}
+.pr.pop{animation:pop .32s}
+@keyframes pop{40%{transform:scale(1.1)}}
+.none{padding:60px 0;color:var(--smoke);text-align:center}
+
+.about-grid{display:grid;gap:56px;margin-top:clamp(48px,7vw,96px)}
+@media(min-width:900px){.about-grid{grid-template-columns:5fr 6fr;gap:96px;align-items:start}}
+.about-art{display:grid;place-items:center;padding:48px 24px;border:1px solid var(--line);border-radius:32px;background:radial-gradient(420px 320px at 50% 40%,rgba(255,90,31,.22),transparent 70%),var(--night2)}
+.about-art svg{width:min(56%,240px);height:auto;animation:drift 5s ease-in-out infinite;filter:drop-shadow(0 22px 28px rgba(0,0,0,.5))}
+@keyframes drift{50%{transform:translateY(-14px)}}
+.about-art p{margin-top:28px;font-family:Archivo,sans-serif;font-weight:800;font-variation-settings:"wdth" 80;font-size:clamp(24px,3vw,34px);text-align:center;line-height:1.15}
+.fact{display:grid;gap:8px 32px;padding:28px 0;border-top:1px solid var(--line)}
+.fact:last-of-type{border-bottom:1px solid var(--line)}
+@media(min-width:700px){.fact{grid-template-columns:180px 1fr}}
+.fact h2{font-size:34px}
+.fact p{color:#c9d2e6}
+.about-copy>p{font-size:clamp(19px,2vw,23px);color:#c9d2e6;max-width:26em;margin-bottom:34px}
+.about-copy .actions{margin-top:36px}
+
+.where-grid{display:grid;gap:36px;margin-top:clamp(40px,6vw,80px)}
+@media(min-width:900px){.where-grid{grid-template-columns:1fr 1.2fr;gap:56px}}
+.card{padding:28px;border:1px solid var(--line);border-radius:26px;background:var(--night2)}
+.card address{font-style:normal;font-weight:600;font-size:21px;line-height:1.45;margin:6px 0 20px}
+.card h2{font-size:15px;font-family:Figtree,sans-serif;font-weight:600;text-transform:none;letter-spacing:0;color:var(--smoke);line-height:1.4}
+.hours{display:grid;gap:2px;margin:10px 0 24px}
+.hours div{display:flex;justify-content:space-between;padding:10px 14px;margin:0 -14px;border-radius:12px;font-weight:600}
+.hours div.today{background:var(--ember);color:#fff}
+.card .actions{margin-top:8px}
+.map{position:relative;min-height:420px;border-radius:26px;overflow:hidden;border:1px solid var(--line);background:var(--night2)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:invert(.92) hue-rotate(180deg) saturate(.55) contrast(.92)}
+
+
+.foot{padding:40px 0 140px;border-top:1px solid var(--line);color:var(--smoke);font-size:14px}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:center;padding:0 12px calc(12px + env(safe-area-inset-bottom));pointer-events:none}
+.cartbar{pointer-events:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;width:min(100%,480px);height:60px;padding:0 24px;border-radius:20px;background:var(--ember);color:#fff;font-weight:700;box-shadow:0 14px 40px rgba(255,90,31,.38)}
+.cartbar b{font-family:Archivo,sans-serif;font-weight:800;font-size:20px}
+@media(min-width:900px){.dock{justify-content:flex-end;padding-right:32px}.cartbar{width:auto;min-width:360px}}
+
+.veil{position:fixed;inset:0;z-index:100;background:rgba(5,9,20,.64);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.veil.on{opacity:1;visibility:visible}
+.drawer{position:fixed;z-index:110;left:0;right:0;bottom:0;max-height:92svh;display:flex;flex-direction:column;background:var(--night2);border-radius:26px 26px 0 0;transform:translateY(100%);visibility:hidden;transition:transform .38s cubic-bezier(.2,.8,.2,1),visibility .38s}
+.drawer.on{transform:none;visibility:visible}
+@media(min-width:700px){.drawer{left:auto;top:0;width:470px;max-height:none;border-radius:0;transform:translateX(100%)}}
+.dh{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;border-bottom:1px solid var(--line)}
+.dh h2{font-size:38px}
+.dx{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);font-size:22px;line-height:1}
+.dx:hover{border-color:var(--bone)}
+.db{flex:1;overflow:auto;padding:6px 24px 24px}
+.ln{display:grid;grid-template-columns:1fr auto;gap:8px 16px;padding:16px 0;border-bottom:1px dashed var(--line)}
+.ln b{font-weight:700}
+.ln small{display:block;color:var(--smoke)}
+.ln .lp{font-weight:700;text-align:right}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px}
+.qty button{width:36px;height:36px;font-size:20px;line-height:1}
+.qty span{min-width:26px;text-align:center;font-weight:700}
+.modes{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:6px;margin-top:22px}
+.modes label{position:relative}
+.modes input{position:absolute;opacity:0;inset:0}
+.modes span{display:block;padding:12px 6px;text-align:center;border:1.5px solid var(--line);border-radius:14px;font-weight:600;font-size:14px;cursor:pointer}
+.modes input:checked+span{background:var(--bone);color:var(--night);border-color:var(--bone)}
+.modes input:focus-visible+span{outline:3px solid var(--flame);outline-offset:2px}
+.fld{display:block;margin-top:14px}
+.fld small{display:block;margin-bottom:6px;color:var(--smoke);font-weight:600;font-size:14px}
+.fld input,.fld textarea{width:100%;padding:14px 18px;border-radius:14px;background:var(--night);border:1.5px solid var(--line);resize:none}
+.fld input:focus,.fld textarea:focus{outline:0;border-color:var(--flame)}
+.empty{padding:56px 0;text-align:center;color:var(--smoke)}
+.empty .btn{margin-top:20px}
+.df{padding:18px 24px calc(18px + env(safe-area-inset-bottom));border-top:1px solid var(--line)}
+.tot{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px}
+.tot b{font-size:38px}
+.df .btn{width:100%}
+.toast{position:fixed;left:50%;bottom:112px;z-index:120;padding:13px 22px;border-radius:999px;background:var(--bone);color:var(--night);font-weight:700;transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="ghost" viewBox="0 0 120 134">
+<path d="M60 14C34 14 18 34 18 60v54c0 6 6 8 10 4l8-8 8 8c3 3 8 3 11 0l5-6 5 6c3 3 8 3 11 0l8-8 8 8c4 4 10 2 10-4V60C102 34 86 14 60 14z" fill="#f6f1e8"/>
+<ellipse cx="46" cy="60" rx="6" ry="9" fill="#0a1226"/>
+<ellipse cx="74" cy="60" rx="6" ry="9" fill="#0a1226"/>
+<path d="M50 80q10 10 20 0" stroke="#0a1226" stroke-width="4" fill="none" stroke-linecap="round"/>
+<circle cx="36" cy="76" r="5" fill="#ff5a1f" opacity=".45"/>
+<circle cx="84" cy="76" r="5" fill="#ff5a1f" opacity=".45"/>
+<path d="M32 26c-8-2-12-12-6-18 5-5 12-3 16 1 3-8 14-9 18-2 4-7 15-6 18 2 5-3 12-1 15 5 3 7-2 13-9 14z" fill="#fff" stroke="#e1d9cb" stroke-width="2"/>
+<rect x="34" y="24" width="52" height="10" rx="3" fill="#fff" stroke="#e1d9cb" stroke-width="2"/>
+</symbol>
+<symbol id="pizza" viewBox="0 0 600 600">
+<circle cx="300" cy="300" r="290" fill="#c8782a"/>
+<circle cx="300" cy="300" r="278" fill="#e3a54e"/>
+<circle cx="300" cy="300" r="252" fill="#b22a1c"/>
+<circle cx="300" cy="300" r="240" fill="#f2b83d"/>
+<circle cx="230" cy="250" r="46" fill="#ffd36b" opacity=".7"/>
+<circle cx="380" cy="360" r="58" fill="#ffd36b" opacity=".6"/>
+<circle cx="350" cy="210" r="34" fill="#e39a1f" opacity=".5"/>
+<circle cx="200" cy="380" r="40" fill="#e39a1f" opacity=".45"/>
+<circle cx="420" cy="270" r="30" fill="#ffd36b" opacity=".6"/>
+<g fill="#a3261a" stroke="#7b1810" stroke-width="4">
+<circle cx="210" cy="190" r="36"/><circle cx="385" cy="168" r="36"/><circle cx="452" cy="300" r="36"/>
+<circle cx="362" cy="404" r="36"/><circle cx="220" cy="424" r="36"/><circle cx="140" cy="300" r="36"/>
+<circle cx="300" cy="292" r="36"/><circle cx="432" cy="424" r="34"/>
+</g>
+<g fill="#7b1810" opacity=".55">
+<circle cx="200" cy="184" r="5"/><circle cx="220" cy="198" r="4"/><circle cx="378" cy="162" r="5"/><circle cx="394" cy="176" r="4"/>
+<circle cx="444" cy="296" r="5"/><circle cx="460" cy="308" r="4"/><circle cx="354" cy="398" r="5"/><circle cx="370" cy="410" r="4"/>
+<circle cx="212" cy="418" r="5"/><circle cx="228" cy="432" r="4"/><circle cx="132" cy="296" r="5"/><circle cx="148" cy="308" r="4"/>
+<circle cx="292" cy="286" r="5"/><circle cx="308" cy="300" r="4"/>
+</g>
+<g fill="#16161c" stroke="#2c2c34" stroke-width="3">
+<circle cx="268" cy="222" r="15"/><circle cx="342" cy="332" r="15"/><circle cx="188" cy="352" r="15"/><circle cx="402" cy="236" r="15"/><circle cx="282" cy="464" r="15"/>
+</g>
+<g fill="#f2b83d">
+<circle cx="268" cy="222" r="5"/><circle cx="342" cy="332" r="5"/><circle cx="188" cy="352" r="5"/><circle cx="402" cy="236" r="5"/><circle cx="282" cy="464" r="5"/>
+</g>
+<g fill="none" stroke="#3f9a3a" stroke-width="7">
+<circle cx="250" cy="352" r="17" stroke-dasharray="70 40"/><circle cx="330" cy="236" r="17" stroke-dasharray="70 40"/><circle cx="424" cy="362" r="17" stroke-dasharray="70 40"/><circle cx="160" cy="230" r="17" stroke-dasharray="70 40"/>
+</g>
+<g stroke="rgba(10,18,38,.32)" stroke-width="4" stroke-linecap="round">
+<line x1="14" y1="300" x2="586" y2="300"/>
+<line x1="14" y1="300" x2="586" y2="300" transform="rotate(45 300 300)"/>
+<line x1="14" y1="300" x2="586" y2="300" transform="rotate(90 300 300)"/>
+<line x1="14" y1="300" x2="586" y2="300" transform="rotate(135 300 300)"/>
+</g>
+</symbol>
+</svg>
+
+<header class="top">
+<div class="wrap">
+<a class="brand" href="#/" aria-label="Ghost Pizza ve Döner ana sayfa">
+<svg aria-hidden="true"><use href="#ghost"/></svg>
+<span><b class="disp">Ghost</b><small>Pizza &amp; Döner</small></span>
+</a>
+<button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Menüyü aç"><span></span><span></span><span></span></button>
+</div>
+</header>
+
+<nav class="sheet" id="sheet" aria-label="Ana menü" inert>
+<div class="wrap">
+<div class="slinks">
+<a href="#/"><b class="disp">Ana sayfa</b><small>Ghost'a hoş geldin</small></a>
+<a href="#/menu"><b class="disp">Menü</b><small>Pizza, döner, içecek</small></a>
+<a href="#/hakkimizda"><b class="disp">Hakkımızda</b><small>Gizli tarifin hikâyesi</small></a>
+<a href="#/konum"><b class="disp">Konum</b><small>Adres ve çalışma saatleri</small></a>
+</div>
+<div class="sside">
+<span class="status" id="sheetStatus"><i></i><span class="stText">Saatler kontrol ediliyor</span></span>
+<div><h4>Adres</h4><a class="addrTxt" id="sheetAddr"></a></div>
+<div><h4>Bizi takip et</h4><a class="igLink" target="_blank" rel="noopener">Instagram</a><a class="ttLink" target="_blank" rel="noopener">TikTok</a><a class="waLink" target="_blank" rel="noopener" data-wa>WhatsApp</a></div>
+</div>
+</div>
+</nav>
+
+<div class="curtain" id="curtain" aria-hidden="true"><svg><use href="#ghost"/></svg></div>
+
+<main id="main">
+<section class="view home" id="v-home" data-view="home" tabindex="-1">
+<div class="stage" id="stage" aria-hidden="true">
+<div class="lay dim"><svg class="pz"><use href="#pizza"/></svg></div>
+<div class="lay lit"><svg class="pz"><use href="#pizza"/></svg></div>
+<div class="glow"></div>
+</div>
+<div class="wrap hcopy">
+<div>
+<span class="status" id="homeStatus"><i></i><span class="stText">Saatler kontrol ediliyor</span></span>
+<span class="status table" id="tablePill" hidden><i></i><span id="tableText"></span></span>
+</div>
+<h1 class="disp hero-title" id="heroTitle">Ghost</h1>
+<p class="sub">Pizza &amp; Döner</p>
+<p class="lead">Cizre'nin hayalet lezzeti. Gizli tarifli pizza, şişte pişen döner.</p>
+<div class="actions">
+<a class="btn fill" href="#/menu">Menüyü aç</a>
+<a class="btn line" href="#/konum">Konumu gör</a>
+</div>
+<p class="hint" id="hint">Işığı hareket ettir, gizli tarifi bul.</p>
+</div>
+<div class="doors">
+<a href="#/menu"><b class="disp">Menü</b><span>Pizza, döner, içecek</span></a>
+<a href="#/hakkimizda"><b class="disp">Hakkımızda</b><span>Gizli tarifin hikâyesi</span></a>
+<a href="#/konum"><b class="disp">Konum</b><span>Adres ve saatler</span></a>
+</div>
+</section>
+
+<section class="view" id="v-menu" data-view="menu" tabindex="-1">
+<div class="page">
+<div class="wrap">
+<div class="ph">
+<h1 class="disp">Menü</h1>
+<p>Seç, sepete ekle, WhatsApp'tan gönder.</p>
+</div>
+<div class="mtools">
+<input class="search" id="search" type="search" placeholder="Menüde ara" aria-label="Menüde ara" autocomplete="off">
+</div>
+<nav class="cats" id="cats" aria-label="Menü kategorileri"></nav>
+<div id="list"></div>
+</div>
+</div>
+</section>
+
+<section class="view" id="v-about" data-view="about" tabindex="-1">
+<div class="page">
+<div class="wrap">
+<div class="ph"><h1 class="disp">Tarif bizde<br>kalıyor.</h1></div>
+<div class="about-grid">
+<div class="about-art">
+<svg viewBox="0 0 120 134" aria-hidden="true"><use href="#ghost"/></svg>
+<p>Cizre'nin<br>hayalet lezzeti</p>
+</div>
+<div class="about-copy">
+<p>Ghost'ta her şey bir sırla başlar. Hamurumuzun ve sosumuzun tarifini kimseyle paylaşmıyoruz. Sofranıza gelen lezzeti ise herkesle.</p>
+<div class="fact"><h2 class="disp">Pizza</h2><p>Gizli tarifli hamur ve sos, bol malzeme. Karışıktan kavurmalıya, her pizza fırından sıcak çıkar.</p></div>
+<div class="fact"><h2 class="disp">Döner</h2><p>Şişte pişer, siparişinize göre kesilir. Dürüm, ekmek arası, porsiyon ve iskender seçeneğiyle.</p></div>
+<div class="fact"><h2 class="disp">Sipariş</h2><p>Menüden seç, sepetine ekle, WhatsApp'tan gönder. Gel-al ya da adrese teslim, sen seç.</p></div>
+<div class="actions">
+<a class="btn fill" href="#/menu">Menüyü aç</a>
+<a class="btn line" href="#/konum">Bizi bul</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="view" id="v-where" data-view="where" tabindex="-1">
+<div class="page">
+<div class="wrap">
+<div class="ph">
+<h1 class="disp">Bizi bul</h1>
+<p>Dicle Mahallesi'nde, Cizre'de. Gelmeden önce açık mıyız, buradan bak.</p>
+</div>
+<div class="where-grid">
+<div class="card">
+<span class="status" id="whereStatus"><i></i><span class="stText">Saatler kontrol ediliyor</span></span>
+<h2 style="margin-top:26px">Adres</h2>
+<address class="addrTxt"></address>
+<div id="hoursBlock">
+<h2>Çalışma saatleri</h2>
+<div class="hours" id="hours"></div>
+</div>
+<div class="actions">
+<a class="btn fill" id="dir" target="_blank" rel="noopener">Yol tarifi al</a>
+<a class="btn line callLink">Ara</a>
+<a class="btn line igLink" target="_blank" rel="noopener">Instagram</a>
+</div>
+</div>
+<div class="map"><iframe id="mapFrame" title="Ghost Pizza ve Döner konumu" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="foot">
+<div class="wrap">
+<span>© <span id="year"></span> Ghost Pizza &amp; Döner, Cizre</span>
+<span>Cizre'nin hayalet lezzeti</span>
+</div>
+</footer>
+</main>
+
+<div class="dock" id="dock">
+<button class="cartbar" id="cartbar" type="button" hidden>
+<span id="cbCount">0 ürün</span>
+<span>Sepeti aç</span>
+<b id="cbTotal">0 ₺</b>
+</button>
+</div>
+
+<div class="veil" id="veil"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Sepet" inert>
+<div class="dh">
+<h2 class="disp">Sepetin</h2>
+<button class="dx" id="dx" type="button" aria-label="Sepeti kapat">&times;</button>
+</div>
+<div class="db">
+<div id="lines"></div>
+<div id="form" hidden>
+<div class="modes" id="modes">
+<label><input type="radio" name="mode" value="Gel al" checked><span>Gel al</span></label>
+<label><input type="radio" name="mode" value="Adrese teslim"><span>Adrese teslim</span></label>
+<label id="tableMode" hidden><input type="radio" name="mode" value="Masada"><span>Masada</span></label>
+</div>
+<label class="fld"><small>Adın</small><input id="fName" type="text" autocomplete="name" placeholder="Adın ve soyadın"></label>
+<label class="fld" id="fAddrWrap" hidden><small>Teslimat adresi</small><textarea id="fAddr" rows="2" autocomplete="street-address" placeholder="Mahalle, sokak, kapı no"></textarea></label>
+<label class="fld"><small>Sipariş notu</small><textarea id="fNote" rows="2" placeholder="Acılı olsun, soğansız olsun..."></textarea></label>
+</div>
+</div>
+<div class="df" id="foot" hidden>
+<div class="tot"><span>Toplam</span><b class="disp" id="total">0 ₺</b></div>
+<button class="btn fill" id="send" type="button">Siparişi gönder</button>
+</div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const CONFIG={
+phone:"",
+whatsapp:"",
+address:"Dicle Mah. Muhammed Nurullah Sk., Cizre / Şırnak",
+mapQuery:"Ghost Pizza & Döner Cizre",
+instagram:"ghostpizzadoner",
+tiktok:"ghostpizzadoner",
+hours:[["11:00","23:00"],["11:00","23:00"],["11:00","23:00"],["11:00","23:00"],["11:00","23:00"],["11:00","23:00"],["11:00","23:00"]]
+};
+
+const MENU=[
+{name:"Pizzalar",note:"Gizli tarifli hamur ve sos. Boyunu seç, sepete ekle.",items:[
+{n:"Karışık Pizza",d:"Sucuk, salam, mantar, mısır, mozzarella",tags:["Popüler"],p:[{l:"Küçük",v:190},{l:"Orta",v:250},{l:"Büyük",v:320}]},
+{n:"Sucuklu Pizza",d:"Bol sucuk, mozzarella, közlenmiş biber",p:[{l:"Küçük",v:180},{l:"Orta",v:240},{l:"Büyük",v:310}]},
+{n:"Kavurmalı Pizza",d:"Özel kavurma, kaşar, domates, taze biber",tags:["İmza"],p:[{l:"Küçük",v:210},{l:"Orta",v:280},{l:"Büyük",v:360}]},
+{n:"Margarita",d:"Domates sosu, mozzarella, fesleğen",p:[{l:"Küçük",v:150},{l:"Orta",v:200},{l:"Büyük",v:260}]},
+{n:"Acılı Ghost",d:"Acı biber, sucuk, jalapeno, mozzarella",tags:["Acılı"],p:[{l:"Küçük",v:200},{l:"Orta",v:265},{l:"Büyük",v:340}]},
+{n:"Ghost Special",d:"Gizli tarifin sahibi. İçeriğini siz keşfedin.",tags:["Gizli tarif"],p:[{l:"Küçük",v:230},{l:"Orta",v:300},{l:"Büyük",v:390}]}
+]},
+{name:"Döner",note:"Şişte pişer, siparişinize göre kesilir.",items:[
+{n:"Et Döner Dürüm",d:"Lavaş, soğan, domates, özel sos",tags:["Popüler"],p:[{v:160}]},
+{n:"Tavuk Döner Dürüm",d:"Lavaş, marul, turşu, sarımsaklı sos",p:[{v:130}]},
+{n:"Double Döner Dürüm",d:"Çift porsiyon et, lavaş, soğan, domates",tags:["Doyurucu"],p:[{v:220}]},
+{n:"Ekmek Arası Et Döner",d:"Çıtır ekmek, bol et, domates, turşu",p:[{v:150}]},
+{n:"Ekmek Arası Tavuk Döner",d:"Çıtır ekmek, tavuk, marul, sos",p:[{v:120}]},
+{n:"Porsiyon Döner",d:"Pilav, salata, közlenmiş biber ve domates",p:[{v:230}]},
+{n:"İskender",d:"Tereyağlı, yoğurtlu, domates soslu",tags:["İmza"],p:[{v:270}]}
+]},
+{name:"Yanında",note:"Pizzanın ve dönerin yanına.",items:[
+{n:"Patates Kızartması",d:"Çıtır, tuzlu",p:[{v:70}]},
+{n:"Soğan Halkası",d:"8 adet, sos ile",p:[{v:80}]},
+{n:"Çıtır Tavuk",d:"6 adet, sos hediye",p:[{v:110}]},
+{n:"Karışık Kızartma",d:"Patates, soğan halkası, çıtır tavuk",p:[{v:130}]},
+{n:"Çoban Salata",d:"Domates, salatalık, soğan, maydanoz",p:[{v:60}]}
+]},
+{name:"İçecekler",note:"Soğuk servis edilir.",items:[
+{n:"Ayran",d:"Büyük bardak",p:[{v:20}]},
+{n:"Kola, Fanta, Sprite",d:"330 ml kutu",p:[{v:40}]},
+{n:"Şalgam",d:"Acılı veya acısız",p:[{v:25}]},
+{n:"Soda",d:"200 ml",p:[{v:20}]},
+{n:"Su",d:"500 ml",p:[{v:10}]}
+]}
+];
+
+const VIEWS={"":"home","menu":"menu","hakkimizda":"about","konum":"where"};
+const TITLES={home:"Ghost Pizza & Döner | Cizre'nin Hayalet Lezzeti",menu:"Menü | Ghost Pizza & Döner",about:"Hakkımızda | Ghost Pizza & Döner",where:"Konum ve Saatler | Ghost Pizza & Döner"};
+const ROUTE_OF={home:"",menu:"menu",about:"hakkimizda",where:"konum"};
+
+const $=(s,r)=>(r||document).querySelector(s);
+const $$=(s,r)=>Array.from((r||document).querySelectorAll(s));
+const tl=n=>n.toLocaleString("tr-TR")+" ₺";
+const params=new URLSearchParams(location.search);
+const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const state={q:"",cat:0,view:null,table:/^[\w-]{1,12}$/.test(params.get("masa")||"")?params.get("masa"):""};
+const cart=new Map();
+
+function toast(t){
+const el=$("#toast");
+el.textContent=t;
+el.classList.add("on");
+clearTimeout(toast.t);
+toast.t=setTimeout(()=>el.classList.remove("on"),2600);
+}
+
+function saveCart(){
+try{localStorage.setItem("ghost-cart",JSON.stringify(Array.from(cart.entries())))}catch(e){}
+}
+function loadCart(){
+try{
+const raw=JSON.parse(localStorage.getItem("ghost-cart")||"[]");
+raw.forEach(([k,v])=>{if(v&&v.q>0)cart.set(k,v)});
+}catch(e){}
+}
+function total(){let t=0;cart.forEach(i=>t+=i.v*i.q);return t}
+function count(){let c=0;cart.forEach(i=>c+=i.q);return c}
+
+function renderMenu(){
+const q=state.q.trim().toLocaleLowerCase("tr");
+const searching=q.length>0;
+const groups=MENU.map((c,ci)=>({c,ci,rows:c.items.map((it,ii)=>({it,ii})).filter(({it})=>!searching||(it.n+" "+it.d).toLocaleLowerCase("tr").includes(q))}));
+const shown=searching?groups.filter(g=>g.rows.length):groups.filter(g=>g.ci===state.cat);
+$("#cats").innerHTML=MENU.map((c,ci)=>`<button class="cat-btn${!searching&&ci===state.cat?" on":""}" type="button" data-cat="${ci}"><span>${c.name}</span><em>${c.items.length}</em></button>`).join("");
+$("#cats").hidden=searching;
+$("#list").innerHTML=shown.length?shown.map(({c,ci,rows})=>`<section class="group"><h2 class="disp">${c.name}</h2><p>${c.note}</p>`+rows.map(({it,ii})=>{
+const tags=(it.tags||[]).map(t=>`<span class="tag">${t}</span>`).join("");
+const prices=it.p.map((p,pi)=>{
+const k=it.n+"|"+(p.l||"");
+return p.l
+?`<button class="pr" type="button" data-c="${ci}" data-i="${ii}" data-p="${pi}" data-k="${k}" aria-label="${it.n}, ${p.l}, ${tl(p.v)}, sepete ekle"><small>${p.l}</small><b>${tl(p.v)}</b></button>`
+:`<button class="pr single" type="button" data-c="${ci}" data-i="${ii}" data-p="${pi}" data-k="${k}" aria-label="${it.n}, ${tl(p.v)}, sepete ekle"><b>${tl(p.v)}</b><span class="pl">+</span></button>`;
+}).join("");
+return `<article class="row"><div class="rt"><h3>${it.n}${tags}</h3><p>${it.d}</p></div><div class="rp">${prices}</div></article>`;
+}).join("")+`</section>`).join(""):`<p class="none">Aradığın ürün menüde yok. Başka bir kelime dene.</p>`;
+syncBadges();
+}
+
+function syncBadges(){
+$$(".pr").forEach(b=>{
+const i=cart.get(b.dataset.k);
+if(i)b.dataset.q=i.q;else b.removeAttribute("data-q");
+});
+}
+
+function addItem(k,n,l,v){
+const cur=cart.get(k);
+if(cur)cur.q++;else cart.set(k,{n,l,v,q:1});
+afterCart();
+}
+function changeItem(k,d){
+const cur=cart.get(k);
+if(!cur)return;
+cur.q+=d;
+if(cur.q<=0)cart.delete(k);
+afterCart();
+}
+
+function afterCart(){
+saveCart();
+syncBadges();
+const c=count();
+$("#cartbar").hidden=c===0;
+$("#cbCount").textContent=c+" ürün";
+$("#cbTotal").textContent=tl(total());
+renderDrawer();
+}
+
+function renderDrawer(){
+const has=cart.size>0;
+$("#form").hidden=!has;
+$("#foot").hidden=!has;
+$("#total").textContent=tl(total());
+if(!has){
+$("#lines").innerHTML=`<div class="empty"><p>Sepetin boş. Menüden bir şeyler ekle.</p><a class="btn fill" href="#/menu" data-close="1">Menüye git</a></div>`;
+return;
+}
+let html="";
+cart.forEach((i,k)=>{
+html+=`<div class="ln"><div><b>${i.n}</b>${i.l?`<small>${i.l}</small>`:""}</div><div class="lp">${tl(i.v*i.q)}</div><div class="qty" data-k="${k}"><button type="button" data-d="-1" aria-label="Azalt">&minus;</button><span>${i.q}</span><button type="button" data-d="1" aria-label="Artır">+</button></div></div>`;
+});
+$("#lines").innerHTML=html;
+}
+
+function openDrawer(){
+const d=$("#drawer");
+d.inert=false;
+d.classList.add("on");
+$("#veil").classList.add("on");
+document.body.style.overflow="hidden";
+setTimeout(()=>$("#dx").focus(),60);
+}
+function closeDrawer(){
+const d=$("#drawer");
+d.classList.remove("on");
+d.inert=true;
+$("#veil").classList.remove("on");
+document.body.style.overflow="";
+}
+
+function setSheet(open){
+const s=$("#sheet"),b=$("#burger");
+s.inert=!open;
+s.classList.toggle("on",open);
+b.setAttribute("aria-expanded",String(open));
+b.setAttribute("aria-label",open?"Menüyü kapat":"Menüyü aç");
+document.body.style.overflow=open?"hidden":"";
+document.body.classList.toggle("menu-open",open);
+}
+
+function currentMode(){return ($("input[name=mode]:checked")||{}).value||"Gel al"}
+
+function buildMessage(){
+const lines=["Yeni sipariş, Ghost Pizza & Döner",""];
+cart.forEach(i=>lines.push(`${i.q} x ${i.n}${i.l?" ("+i.l+")":""}: ${tl(i.v*i.q)}`));
+lines.push("","Toplam: "+tl(total()),"Teslimat: "+currentMode());
+if(currentMode()==="Masada"&&state.table)lines.push("Masa: "+state.table);
+const name=$("#fName").value.trim();
+if(name)lines.push("Ad: "+name);
+if(currentMode()==="Adrese teslim")lines.push("Adres: "+$("#fAddr").value.trim());
+const note=$("#fNote").value.trim();
+if(note)lines.push("Not: "+note);
+return lines.join("\n");
+}
+
+function send(){
+if(!cart.size)return;
+if(currentMode()==="Adrese teslim"&&!$("#fAddr").value.trim()){
+toast("Teslimat için adresini yaz.");
+$("#fAddr").focus();
+return;
+}
+const msg=buildMessage();
+if(CONFIG.whatsapp){
+window.open("https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(msg),"_blank","noopener");
+return;
+}
+const done=()=>toast("Sipariş metni kopyalandı.");
+const fail=()=>toast("Kopyalanamadı. Metni elle seç.");
+if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(msg).then(done,fail);else fail();
+}
+
+function toMin(s){const [h,m]=s.split(":").map(Number);return h*60+m}
+function istanbulNow(){
+const parts=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Istanbul",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+const get=t=>parts.find(p=>p.type===t).value;
+const map={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+return{day:map[get("weekday")],min:(Number(get("hour"))%24)*60+Number(get("minute"))};
+}
+function updateStatus(){
+if(!CONFIG.hours){
+$$(".status:not(.table)").forEach(s=>s.hidden=true);
+$("#hoursBlock").hidden=true;
+return;
+}
+const now=istanbulNow();
+const today=CONFIG.hours[now.day];
+let open=false,text="Bugün kapalıyız";
+if(today){
+const o=toMin(today[0]);
+let c=toMin(today[1]);
+if(c<=o)c+=1440;
+if(now.min>=o&&now.min<c){open=true;text="Şu an açık, "+today[1]+"'a kadar"}
+else if(now.min<o)text="Şu an kapalı, "+today[0]+"'da açılıyoruz";
+else text="Şu an kapalı";
+}
+$$(".status:not(.table)").forEach(s=>{
+s.classList.toggle("closed",!open);
+$(".stText",s).textContent=text;
+});
+const names=["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"];
+$("#hours").innerHTML=[1,2,3,4,5,6,0].map(d=>{
+const h=CONFIG.hours[d];
+return `<div class="${d===now.day?"today":""}"><span>${names[d]}</span><span>${h?h[0]+" - "+h[1]:"Kapalı"}</span></div>`;
+}).join("");
+}
+
+const light={x:0,y:0,tx:0,ty:0,last:-1e9,t0:performance.now(),raf:0};
+function lightFrame(now){
+const home=$("#v-home");
+if(state.view!=="home"||document.hidden){light.raf=0;return}
+const hr=home.getBoundingClientRect();
+const W=hr.width,H=hr.height;
+if(now-light.last>2600){
+const t=(now-light.t0)/1000;
+light.tx=W*(.68+.2*Math.sin(t*.5));
+light.ty=H*(.4+.18*Math.cos(t*.37));
+}
+light.x+=(light.tx-light.x)*.1;
+light.y+=(light.ty-light.y)*.1;
+home.style.setProperty("--mx",light.x.toFixed(1)+"px");
+home.style.setProperty("--my",light.y.toFixed(1)+"px");
+const tr=$("#heroTitle").getBoundingClientRect();
+const t=$("#heroTitle");
+t.style.setProperty("--hx",(light.x-(tr.left-hr.left)).toFixed(1)+"px");
+t.style.setProperty("--hy",(light.y-(tr.top-hr.top)).toFixed(1)+"px");
+light.raf=requestAnimationFrame(lightFrame);
+}
+function startLight(){
+if(reduce){
+const home=$("#v-home");
+const hr=home.getBoundingClientRect();
+home.style.setProperty("--mx",(hr.width*.68)+"px");
+home.style.setProperty("--my",(hr.height*.4)+"px");
+const t=$("#heroTitle"),tr=t.getBoundingClientRect();
+t.style.setProperty("--hx",(hr.width*.5)+"px");
+t.style.setProperty("--hy",(tr.height*.5)+"px");
+return;
+}
+if(!light.raf)light.raf=requestAnimationFrame(lightFrame);
+}
+
+function showView(name){
+$$(".view").forEach(v=>v.classList.toggle("on",v.dataset.view===name));
+state.view=name;
+document.title=TITLES[name];
+$$(".slinks a").forEach(a=>{
+const r=a.getAttribute("href").replace(/^#\/?/,"");
+if(r===ROUTE_OF[name])a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");
+});
+window.scrollTo(0,0);
+const el=$("#v-"+(name==="where"?"where":name));
+if(el)el.focus({preventScroll:true});
+if(name==="home")startLight();
+}
+
+function routeName(route){
+const r=(route===undefined?location.hash:route).replace(/^#\/?/,"").replace(/\/$/,"");
+return VIEWS[r]||"home";
+}
+
+function navigate(route){
+const next=routeName(route);
+if(next===state.target){setSheet(false);return}
+state.target=next;
+const wasOpen=$("#sheet").classList.contains("on");
+if(state.view===null||reduce){
+setSheet(false);
+showView(next);
+return;
+}
+const c=$("#curtain");
+c.className="curtain in";
+setSheet(false);
+setTimeout(()=>{
+showView(next);
+c.className="curtain out";
+setTimeout(()=>{c.className="curtain reset"},480);
+},wasOpen?520:460);
+}
+
+function init(){
+const mapUrl="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(CONFIG.mapQuery);
+$("#mapFrame").src="https://maps.google.com/maps?q="+encodeURIComponent(CONFIG.mapQuery)+"&z=16&output=embed";
+$("#dir").href=mapUrl;
+$$(".addrTxt").forEach(a=>{a.textContent=CONFIG.address;if(a.tagName==="A"){a.href=mapUrl;a.target="_blank";a.rel="noopener"}});
+$$(".igLink").forEach(a=>a.href="https://instagram.com/"+CONFIG.instagram);
+$$(".ttLink").forEach(a=>a.href="https://www.tiktok.com/@"+CONFIG.tiktok);
+$("#year").textContent=new Date().getFullYear();
+
+if(CONFIG.phone){
+$$(".callLink").forEach(a=>a.href="tel:"+CONFIG.phone.replace(/\s/g,""));
+}else{
+$$(".callLink").forEach(a=>a.remove());
+}
+if(CONFIG.whatsapp){
+$$(".waLink").forEach(a=>a.href="https://wa.me/"+CONFIG.whatsapp);
+$("#send").textContent="WhatsApp'ta gönder";
+}else{
+$$(".waLink").forEach(a=>a.remove());
+$("#send").textContent="Siparişi kopyala";
+}
+if(state.table){
+$("#tablePill").hidden=false;
+$("#tableText").textContent="Masa "+state.table;
+$("#tableMode").hidden=false;
+$("input[value=Masada]").checked=true;
+}
+
+loadCart();
+renderMenu();
+afterCart();
+updateStatus();
+setInterval(updateStatus,60000);
+
+const topbar=$(".top");
+const onScroll=()=>topbar.classList.toggle("solid",window.scrollY>24);
+onScroll();
+window.addEventListener("scroll",onScroll,{passive:true});
+$("#burger").addEventListener("click",()=>setSheet(!$("#sheet").classList.contains("on")));
+document.addEventListener("click",e=>{
+const a=e.target.closest("a[href^='#/']");
+if(!a)return;
+e.preventDefault();
+const target=a.getAttribute("href");
+if(a.closest("#drawer"))closeDrawer();
+try{if(location.hash!==target)history.pushState(null,"",target)}catch(err){}
+navigate(target);
+});
+window.addEventListener("hashchange",()=>navigate());
+window.addEventListener("popstate",()=>navigate());
+document.addEventListener("keydown",e=>{
+if(e.key==="Escape"){setSheet(false);closeDrawer()}
+});
+
+const home=$("#v-home");
+const moveLight=e=>{
+const r=home.getBoundingClientRect();
+light.tx=e.clientX-r.left;
+light.ty=e.clientY-r.top;
+light.last=performance.now();
+$("#hint").classList.add("gone");
+};
+home.addEventListener("pointermove",moveLight);
+home.addEventListener("pointerdown",moveLight);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden&&state.view==="home")startLight()});
+window.addEventListener("resize",()=>{if(reduce&&state.view==="home")startLight()});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{if(state.view==="home")startLight()});
+
+$("#search").addEventListener("input",e=>{state.q=e.target.value;renderMenu()});
+$("#cats").addEventListener("click",e=>{
+const b=e.target.closest(".cat-btn");
+if(!b)return;
+state.cat=Number(b.dataset.cat);
+renderMenu();
+const on=$(".cat-btn.on");
+if(on)on.scrollIntoView({inline:"center",block:"nearest"});
+});
+$("#list").addEventListener("click",e=>{
+const b=e.target.closest(".pr");
+if(!b)return;
+const it=MENU[b.dataset.c].items[b.dataset.i];
+const p=it.p[b.dataset.p];
+addItem(b.dataset.k,it.n,p.l||"",p.v);
+const nb=$(`.pr[data-k="${CSS.escape(b.dataset.k)}"]`);
+if(nb){nb.classList.remove("pop");void nb.offsetWidth;nb.classList.add("pop")}
+});
+$("#cartbar").addEventListener("click",openDrawer);
+$("#dx").addEventListener("click",closeDrawer);
+$("#veil").addEventListener("click",closeDrawer);
+$("#drawer").addEventListener("click",e=>{
+if(e.target.closest("[data-close]")){closeDrawer();return}
+const btn=e.target.closest(".qty button");
+if(btn)changeItem(btn.parentElement.dataset.k,Number(btn.dataset.d));
+});
+$("#modes").addEventListener("change",()=>{
+$("#fAddrWrap").hidden=currentMode()!=="Adrese teslim";
+});
+$("#send").addEventListener("click",send);
+
+navigate();
+}
+
+init();
+</script>
+</body>
+</html>
